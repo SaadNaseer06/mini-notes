@@ -1,6 +1,6 @@
 <?php
 // Check if the current URL contains "notes"
-$OnNotesPage = strpos($_SERVER['REQUEST_URI'], 'notes')!==false;
+$OnNotesPage = strpos($_SERVER['REQUEST_URI'], 'index') !==false;
 ?>
 
 <header class="bg-white shadow">

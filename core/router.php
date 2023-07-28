@@ -1,12 +1,10 @@
 <?php
 
-function routeToController($uri, $routes) {
 
+function routeToController($uri, $routes) {
     if (array_key_exists($uri, $routes)) {
-        // dd("true...");
-        require $routes[$uri];
+        require base_path($routes[$uri]);
     } else {
-        // dd("false");
         abort();
     }
 }   
@@ -14,12 +12,12 @@ function routeToController($uri, $routes) {
 function abort($code = 404) {
     http_response_code($code);
 
-    require "views/{$code}.php";
+    require base_path("views/{$code}.php");
 
     die();
 }
 
-$routes = require('routes.php');
+$routes = require base_path("routes.php");
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
 routeToController($uri, $routes);

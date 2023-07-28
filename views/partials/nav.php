@@ -9,12 +9,12 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                        <a href="/practice/"
-                            class="<?php if ($_SERVER['REQUEST_URI']==='/practice/'){echo 'bg-gray-900 text-white';}?>text-white text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="/practice/home"
+                            class="<?php if ($_SERVER['REQUEST_URI']==='/practice/home'){echo 'bg-gray-900 text-white';}?>text-white text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Home</a>
                         <a href="/practice/about"
                             class="<?php if ($_SERVER['REQUEST_URI']==='/practice/about'){echo 'bg-gray-900 text-white';}?>text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"style="color:white;">About</a>
-                        <a href="/practice/notes"
-                        class="<?php if ($_SERVER['REQUEST_URI']==='/practice/notes'){echo 'bg-gray-900 text-white';}?>text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"style="color:white;">Notes</a>
+                        <a href="/practice/notes/index"
+                        class="<?php if ($_SERVER['REQUEST_URI']==='/practice/notes/index'){echo 'bg-gray-900 text-white';}?>text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"style="color:white;">Notes</a>
                         <a href="/practice/contact"
                             class="<?php if ($_SERVER['REQUEST_URI']==='/practice/contact'){echo 'bg-gray-900 text-white';}?>text-white text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact Us</a>
                     </div>
