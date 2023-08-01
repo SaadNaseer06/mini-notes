@@ -1,5 +1,5 @@
 <?php
-view("index.view.php", [
+view("home.view.php", [
     'heading' => 'Home Page',
 ]);
 ?>

@@ -1,4 +1,5 @@
 <?php
+use core\Response;
 
 function dd($value)
 {
@@ -9,13 +10,24 @@ function dd($value)
     die();
 }
 
-function urlIs($value) {
+
+function urlIs($value)
+{
     return $_SERVER['REQUEST_URI'] === $value;
+}
+
+function abort($status = 404)
+{
+    http_response_code($status);
+
+    require base_path("views/{$status}.php");
+
+    die();
 }
 
 function authorize($condition, $status = Response::FORBIDDEN)
 {
-    if (! $condition) {
+    if (!$condition) {
         abort($status);
     }
 }

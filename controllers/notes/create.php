@@ -1,6 +1,7 @@
 <?php
 
 use core\Database;
+use core\Validator;
 
 $config = require base_path('config.php');
 $db = new Database($config['database']);
@@ -25,6 +26,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'user_id' => 11
         ]);
     }
+    header('location: /practice/notes/index');
+    exit();
 }
 
 
