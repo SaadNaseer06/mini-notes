@@ -1,4 +1,7 @@
 <?php
+
+
+session_start();
 //in public folder.
 const BASE_PATH = __DIR__.'/../';
 
